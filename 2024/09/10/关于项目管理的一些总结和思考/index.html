@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>关于项目管理的一些总结和思考 - 小林同学</title>
+
+  
+    <meta name="description" content="一、前言——从流程至下到流程至上最近从互联网跳槽到一家小国企，发现这里的项目管理和互联网差异很大，因此想把最近的思考和感悟记录一下。在互联网时，我曾抱怨过：这流程怎么这么重，预审、评审、对齐、站会、复盘，如果没有那么多流程，每天可以安心写代码该有多好。同事们常常调侃“白天扯皮，晚上写代码”，也总是吐槽“有些人只对方案不写代码，可真轻松”。来到这家国企后发现这里几乎没有流程，需求对完就开始写代码，缺">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于项目管理的一些总结和思考">
+<meta property="og:url" content="http://example.com/2024/09/10/%E5%85%B3%E4%BA%8E%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93%E5%92%8C%E6%80%9D%E8%80%83/index.html">
+<meta property="og:site_name" content="小林同学">
+<meta property="og:description" content="一、前言——从流程至下到流程至上最近从互联网跳槽到一家小国企，发现这里的项目管理和互联网差异很大，因此想把最近的思考和感悟记录一下。在互联网时，我曾抱怨过：这流程怎么这么重，预审、评审、对齐、站会、复盘，如果没有那么多流程，每天可以安心写代码该有多好。同事们常常调侃“白天扯皮，晚上写代码”，也总是吐槽“有些人只对方案不写代码，可真轻松”。来到这家国企后发现这里几乎没有流程，需求对完就开始写代码，缺">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-10T15:33:07.000Z">
+<meta property="article:modified_time" content="2024-10-14T14:49:46.266Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="项目管理">
+<meta property="article:tag" content="流程规范">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="项目管理,流程规范">
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+  
+
+<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">小林同学</div><div class="sub cap">如无必要勿增实体</div></a></div>
+
+<nav class="menu dis-select"></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">关于项目管理的一些总结和思考</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%B0%E5%A2%83%E4%B8%80%EF%BC%9A%E5%B1%81%E8%82%A1%E5%86%B3%E5%AE%9A%E8%84%91%E8%A2%8B"><span class="toc-text">困境一：屁股决定脑袋</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%B0%E5%A2%83%E4%BA%8C%EF%BC%9A%E4%BA%BA%E5%A4%9A%E5%8A%9B%E9%87%8F%E5%B0%8F%EF%BC%9F"><span class="toc-text">困境二：人多力量小？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%B0%E5%A2%83%E4%B8%89%EF%BC%9A%E5%88%B0%E5%BA%95%E5%BA%94%E8%AF%A5%E6%89%BE%E8%B0%81%EF%BC%9F"><span class="toc-text">困境三：到底应该找谁？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%B0%E5%A2%83%E5%9B%9B%EF%BC%9A%E7%BB%93%E8%AE%BA%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">困境四：结论到底是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%B0%E5%A2%83%E4%BA%94%E3%80%81%E9%9C%80%E6%B1%82%E9%A2%91%E7%B9%81%E5%8F%98%E6%9B%B4"><span class="toc-text">困境五、需求频繁变更</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A0%87%E5%87%86%E5%8C%96%E8%AF%84%E5%AE%A1%E6%B5%81%E7%A8%8B"><span class="toc-text">1、标准化评审流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81%E9%9C%80%E6%B1%82%E8%AF%84%E5%AE%A1%E9%A2%84%E5%AE%A1"><span class="toc-text">1.1、需求评审预审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81%E6%A6%82%E8%A6%81%E8%AE%BE%E8%AE%A1%E8%AF%84%E5%AE%A1"><span class="toc-text">1.2、概要设计评审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1%E8%AF%84%E5%AE%A1"><span class="toc-text">1.3、详细设计评审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4%E3%80%81%E4%BB%A3%E7%A0%81%E8%AF%84%E5%AE%A1"><span class="toc-text">1.4、代码评审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5%E3%80%81%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AF%84%E5%AE%A1"><span class="toc-text">1.5、测试用例评审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6%E3%80%81%E4%B8%8A%E7%BA%BF%E6%96%B9%E6%A1%88%E8%AF%84%E5%AE%A1"><span class="toc-text">1.6、上线方案评审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E9%87%8F%E8%AF%84%E4%BC%B0%E4%B8%8E%E8%B5%84%E6%BA%90%E5%87%86%E5%A4%87"><span class="toc-text">容量评估与资源准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="toc-text">配置准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E6%89%B9%E6%AC%A1%E5%92%8C%E7%81%B0%E5%BA%A6%E8%AE%A1%E5%88%92"><span class="toc-text">发布批次和灰度计划</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E6%BB%9A%E8%AE%A1%E5%88%92"><span class="toc-text">回滚计划</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E4%B8%8A%E9%AA%8C%E8%AF%81%E8%AE%A1%E5%88%92"><span class="toc-text">线上验证计划</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E8%AF%84%E5%AE%A1"><span class="toc-text">组织评审</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">1.7、总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%94%B6%E9%9B%86%E4%BF%A1%E6%81%AF"><span class="toc-text">2、收集信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BA%94%E5%AF%B9%E9%A3%8E%E9%99%A9"><span class="toc-text">3、应对风险</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%8F%98%E6%9B%B4"><span class="toc-text">需求变更</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0"><span class="toc-text">功能无法实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%B6%E6%9C%9F"><span class="toc-text">延期</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E5%9B%BA%E5%AE%9A%E5%B9%B2%E7%B3%BB%E4%BA%BA%E8%B4%A3%E4%BB%BB%EF%BC%8C%E5%87%8F%E5%B0%91%E4%BA%A4%E6%8E%A5%E6%88%90%E6%9C%AC"><span class="toc-text">4、固定干系人责任，减少交接成本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%A5%BD%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E8%AE%BE%E8%AE%A1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%9B%B8%E8%BE%85%E7%9B%B8%E6%88%90"><span class="toc-text">5、好的技术方案设计与项目管理相辅相成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E6%A0%91%E7%AB%8B%E8%A7%84%E8%8C%83%E6%89%8D%E8%83%BD%E7%A8%B3%E6%AD%A5%E6%8E%A8%E8%BF%9B"><span class="toc-text">6、树立规范才能稳步推进</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81%E4%B8%80%E5%88%87%E7%BB%93%E8%AE%BA%E8%90%BD%E5%88%B0%E6%96%87%E6%A1%A3"><span class="toc-text">7、一切结论落到文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81%E5%A4%8D%E7%9B%98%E2%80%94%E2%80%94%E5%BB%BA%E7%AB%8B%E6%9C%89%E6%95%88%E7%9A%84%E5%8F%8D%E9%A6%88%E6%9C%BA%E5%88%B6"><span class="toc-text">8、复盘——建立有效的反馈机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E4%B8%80%E4%BA%9B%E6%AE%8B%E9%85%B7%E7%9A%84%E4%BA%8B%E5%AE%9E"><span class="toc-text">1、一些残酷的事实</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E6%83%85%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%83%8F%E4%BD%A0%E6%83%B3%E8%B1%A1%E7%9A%84%E9%82%A3%E4%B9%88%E9%A1%BA%E5%88%A9"><span class="toc-text">事情永远不会像你想象的那么顺利</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PM%E6%80%BB%E6%98%AF%E8%83%8C%E9%94%85%E4%BE%A0"><span class="toc-text">PM总是背锅侠</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%B8%80%E4%BA%9B%E5%8E%9F%E5%88%99"><span class="toc-text">2、一些原则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%81%9A%E8%80%81%E5%A5%BD%E4%BA%BA"><span class="toc-text">不做老好人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%96%84%E4%BA%8E%E5%AF%BB%E6%B1%82%E5%B8%AE%E5%8A%A9"><span class="toc-text">善于寻求帮助</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E8%87%B3%E4%B8%8A"><span class="toc-text">流程至上</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E4%B8%80%E4%BA%9B%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="toc-text">3、一些碎碎念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8B%87%E4%BA%8E%E5%8F%8D%E6%80%9D"><span class="toc-text">勇于反思</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E6%8C%81%E8%89%AF%E5%A5%BD%E7%9A%84%E5%BF%83%E6%80%81"><span class="toc-text">保持良好的心态</span></a></li></ol></li></ol></div></div></widget>
+
+
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2024-09-10T15:33:07.000Z">2024-09-10</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>关于项目管理的一些总结和思考</span></h1>
+<h1 id="一、前言——从流程至下到流程至上"><a href="#一、前言——从流程至下到流程至上" class="headerlink" title="一、前言——从流程至下到流程至上"></a>一、前言——从流程至下到流程至上</h1><p>最近从互联网跳槽到一家小国企，发现这里的项目管理和互联网差异很大，因此想把最近的思考和感悟记录一下。在互联网时，我曾抱怨过：这流程怎么这么重，预审、评审、对齐、站会、复盘，如果没有那么多流程，每天可以安心写代码该有多好。同事们常常调侃“白天扯皮，晚上写代码”，也总是吐槽“有些人只对方案不写代码，可真轻松”。来到这家国企后发现这里几乎没有流程，需求对完就开始写代码，缺什么字段少什么方法，自己加完再告诉对接人就好。不过这样的开发方式似乎并不像预想的那么美好，流程缺失后发现扯的皮好像更多了，并且扯完还总是返工。所以如果你觉得流程不重要，那你一定没有经历过没有流程的项目。<br>不过项目管理是一个大而泛的概念，我想结合我的经历过的一些小场景去作总结归纳，阐述流程的重要性，而不是体系化的描述什么是项目管理，怎么做项目管理（当然以我的工作经验，似乎也还达不到这一点），避免大而空</p>
+<h1 id="二、一些常见的困境"><a href="#二、一些常见的困境" class="headerlink" title="二、一些常见的困境"></a>二、一些常见的困境</h1><h2 id="困境一：屁股决定脑袋"><a href="#困境一：屁股决定脑袋" class="headerlink" title="困境一：屁股决定脑袋"></a>困境一：屁股决定脑袋</h2><p>“业务只给怎么点时间，怎么能保证质量”；“这个接口的参数定义对前端很不友好”；“产品想怎么改就怎么改，完全不考虑好不好实现”；“这个功能逻辑清晰交互简单怎么开发就实现不了呢”；“你这个改动点为什么没通知测试回归”；“这个功能不应该放在我的域”。这些话你应该自己说过又或者听别人说过，显然这些都出自不同角色的口吻：前端、后端、业务、测试，每个角色都对其他角色有一些误解，由于不同角色带来的思维惯性影响，这些角色总是聊不到一块，总是在相互吐槽；同一角色之中不同团队不同领域也总是会存在分歧</p>
+<h2 id="困境二：人多力量小？"><a href="#困境二：人多力量小？" class="headerlink" title="困境二：人多力量小？"></a>困境二：人多力量小？</h2><p>“这么简单的模块，换我来做，半天就搞定了，怎么他要这么久呢？“在与其他项目成员、外部团队对接时，我产生过这样的想法，如果是一个比较小的项目，我甚至会想，这个项目如果交给我一个人去做，也许都要不了那么久，那样我可以随心所欲的按照自己的想法设计。人多本应力量大，但似乎人越多做起事情来越麻烦效率越低</p>
+<h2 id="困境三：到底应该找谁？"><a href="#困境三：到底应该找谁？" class="headerlink" title="困境三：到底应该找谁？"></a>困境三：到底应该找谁？</h2><p>在有的项目中，在交互的团队比较多，或者一个团队中涉及多个开发人员时，常常会遇到需要找人对接问题时，总是甩来甩去，A说应该找B，B说应该找C，C说我不清楚这个事情；又或者原本划定由A负责，但找到他时却说已经交接给B了，找到B时，B只清楚概要不清楚细节。这些扯皮总是不断拖慢项目节奏</p>
+<h2 id="困境四：结论到底是什么？"><a href="#困境四：结论到底是什么？" class="headerlink" title="困境四：结论到底是什么？"></a>困境四：结论到底是什么？</h2><p>“这个功能到底应该怎么实现？之前你说的是要这样做，但现在又说要这样做”这是我最近常常听到的话，对接方的结论总是反复横跳前后不一致，我们也总是不断地改写已经测完的代码</p>
+<h2 id="困境五、需求频繁变更"><a href="#困境五、需求频繁变更" class="headerlink" title="困境五、需求频繁变更"></a>困境五、需求频繁变更</h2><p>如果是产品中途改需求，有时还可以跟产品讨价还价，放到迭代中上线，最让人头疼的是已经开发到一半时，上游系统让下游系统加新的接口&#x2F;MQ，因为这往往意味着当前的方案有漏洞，存在交互、依赖被遗漏掉了，又或者是方案根本没有对齐，那如果我们不满足上游系统的要求，很可能流程就无法闭环。</p>
+<h1 id="三、我们能做什么？"><a href="#三、我们能做什么？" class="headerlink" title="三、我们能做什么？"></a>三、我们能做什么？</h1><p>我本想针对每种困境单独列一列应对措施，但思来想去觉得每种情况的解决方式并不是单一的，每种应对措施也会对多种困境起到效果，因此我想还是按照措施逐个梳理，如果某种做法对上述场景有针对性效果的，我也会在文中点出</p>
+<h2 id="1、标准化评审流程"><a href="#1、标准化评审流程" class="headerlink" title="1、标准化评审流程"></a>1、标准化评审流程</h2><p>上面提到的困境我常会遇到，也不难发现，很多困境的核心，尤其是困境一，来自于我们对人（能力、做事风格、设计风格，期望）、对事（复杂度、可行性）的错误评估，我们需要借助一些标准化的动作——“评审”来收束评估过程（收束这个词可能很怪，不过我觉得每个人的思维习惯不一致，我们不可能通过任何方法让每个的思考过程和结果都一致，因此只能借助标准化的流程让人们思考的集中在我们期望的范围内，因此我想收束一词是合适的）。</p>
+<p>通常在项目管理过程中，我们会经历很多次评审——需求预审评审、概要设计评审、详细设计评审、代码评审、测试用例评审、上线方案评审等等，每一个环节都旨在帮助我们更好的把握的人和事，打通不同角色、不同领域之间的隔阂。</p>
+<h3 id="1-1、需求评审预审"><a href="#1-1、需求评审预审" class="headerlink" title="1.1、需求评审预审"></a>1.1、需求评审预审</h3><p>首先在需求预审评审阶段钱，通常需要业务、产品先输出一份项目文档和若干需求文档，当进入预审阶段，PM需要根据文档识别出可能涉及到的模块，或者更标准的说法——干系人识别（不过大多数时候产品在出这些文档之前，应该已经和各自模块的技术负责人简单聊过，清楚自己的需求大致涉及哪些模块的开发），并通知各模块owner审阅文档，标注不清晰、存在争议的地方，比如用词不准确（比如描述订单走到终态，取消包不包含）、只有概念没有定义、缺失异常场景的交互（某个模块渲染失败直接报错还是隐藏）、流程不完整、前后流程矛盾等。此外如果owner发现分到的内容并不全部属于自己的模块，还需要PM和该owner共同讨论重新划分领域，识别出新的owner。同时业务和产品需要重新思考被标注的内容，也许还需要重新找各模块owner聊一聊。当这些事情都做完之后，就可以召集业务、各模块产品、owner拉会评审，由业务方首先进行流程串讲，然后各个模块产品依此讲解需求，并由模块owner、开发、测试提出问题，小问题应该当场得出结论，大问题由PM记录并在会后跟进，必要时进行二次评审（通常不应该超过两次）。</p>
+<h3 id="1-2、概要设计评审"><a href="#1-2、概要设计评审" class="headerlink" title="1.2、概要设计评审"></a>1.2、概要设计评审</h3><p>在需求确认清楚后，需要PM&#x2F;架构师（如果项目有架构师，架构师来做更合理）输出概要设计，概要设计的作用主要是拆解功能点、划分领域、串联流程，可以使用思维导图、架构图、时序图、协作图等工具。在这个过程中，PM和架构师需要和各模块owner进行充分的交流，了解各模块的期望和原则（每个模块在方案设计上可能会有一些原则，我曾常听到类似于这些话：“XX系统的定位是XX，不应该做XX功能”，“XX模块是通用模块，不做定制，应该在上层做”。因此提前了解各模块的原则很重要）</p>
+<p>这里你可能会想，明明在评审阶段我们已经做过了领域模块的划分，为什么这里还会涉及？首先通常在需求评审阶段所做的领域划分会比较粗糙（因为此时的需求是粗糙的），在需求确定后往往还需要做一些调整；其次可能会遇到某些功能既可以放在A领域也可以放在B领域，这时就需要架构师来考虑到底放在哪个领域更合理；再者概要设计阶段的领域划分应该更加细化，例如画出每个领域内部可能还存在某些子模块，这些子模块之间、子模块和外部领域之间如何交互。</p>
+<p>当概要设计完成后，需要PM、架构师组织与各模块owner评审确认，尤其是确认领域的划分和交互流程上是否存在争议，如果存在争议，则需要及时调整概要设计。</p>
+<p>此外，在概要设计评审阶段可能还需要做一下依赖识别，在系统之间交互较多的项目中，可能很多模块都涉及新增接口调用或mq，这些新增的依赖我们需要尽早将它们识别出来，并确定好提供时间，否则日后可能会成为交付的瓶颈。当然在概要设计阶段可能无法全部识别出来，不过PM&#x2F;架构师可以提供一个表格让各模块填写，包括需求方、依赖内容、被依赖方、提供时间等等，在概要设计阶段这张表格应当被尽可能多的填写并由双方确认，剩余的也应当在详细设计评审完成前确认完成。</p>
+<h3 id="1-3、详细设计评审"><a href="#1-3、详细设计评审" class="headerlink" title="1.3、详细设计评审"></a>1.3、详细设计评审</h3><p>概要设计定义好边界和交互后，就需要各owner对各自模块的设计进行细化，包括内部模型设计、api设计、灰度方案设计、影响面评估等等，这些设计应当是具体实现的体现，即开发对照着这份详细设计应该就能知道要如何编码，测试也应该能结合这份设计文档去写测试用例。</p>
+<p>通常在一个大项目中，可能会涉及很多团队，因此通常没有必要组织统一的详细设计评审，各个团队内部在规定的时间内组织完成即可。不过作为PM可以让各团队将详细设计统一放到项目空间同一目录下，方便查阅，同时我们也可以和架构师一起翻阅一遍，看一看大方向是否有问题</p>
+<h3 id="1-4、代码评审"><a href="#1-4、代码评审" class="headerlink" title="1.4、代码评审"></a>1.4、代码评审</h3><p>很多团队会因为任务重时间紧就忽略代码评审，这种做法并不值得推荐，尤其是在风险较大的项目中，我曾遇到过有人代码中存在较大漏洞经评审后需要打回大改的，这样的代码如果未经评审直接带到线上，可想而知是多恐怖的事情。</p>
+<p>代码评审最重要的是要关注代码实现的正确性，但是参与代码评审的人员很可能并不完全了解该项目的背景，因此讲述者应该先介绍项目背景和所做的功能。不过即使事先讲述背景，参与这也无法识别出代码中的所有风险，因此大多数时候评审可能还会关注规范性、健壮性和可扩展性三个方面。</p>
+<ul>
+<li>规范性：通常优秀的团队应该有自己的代码规范，如果没有，也可以参照阿里编码规范，检查命名是否合理、是否有npe、魔法数字、过深的嵌套、过长的方法等等</li>
+<li>健壮性：主要关注异常场景的处理，例如调用外部接口的强弱依赖、页面模块渲染的强弱依赖、主从库方法使用是否合理（高qps场景不应该查主库、高实时性场景不应该查从库）等</li>
+<li>可扩展性：主要关注业务组件和方法的抽象，是不是存在分层混乱、业务逻辑交叉、抽象程度不够等情况</li>
+</ul>
+<h3 id="1-5、测试用例评审"><a href="#1-5、测试用例评审" class="headerlink" title="1.5、测试用例评审"></a>1.5、测试用例评审</h3><p>测试是质量的最后一道防线，曾经我所在的团队有一条铁律——严禁任何未经测试的代码带上线，做到这一点并不容易，因此产品、研发和测试三方打破隔阂异常重要。</p>
+<p>测试人员通常会在技术方案评审完后，提测之前编写测试用例并拉产品和研发一起评审，测试用例通常是根据需求文档和技术方案来编写的，因此在用例评审的过程中，需要确认测试用例的描述是否与需求、实现一致，是否有遗漏的点。这个过程中最重要的是研发必须要清醒的意识到自己改动了什么，对线上环境抱有敬畏之心，每一行代码的改动都可能带来意想不到的问题，代码对于测试来说是黑盒，仅凭需求文档和技术方案，测试不可能识别出一些刁钻的改动，因此研发的每一项改动，哪怕你认为无关紧要，都应该同步到测试，并由测试确认回归面（我曾见过一些研发在改代码时“顺手”优化了一行他认为不合理的点，但这个优化没有自测也没有同步给测试，上线后出现问题）。</p>
+<h3 id="1-6、上线方案评审"><a href="#1-6、上线方案评审" class="headerlink" title="1.6、上线方案评审"></a>1.6、上线方案评审</h3><p>上线是一件劳心又劳力的工作，并且也伴随着巨大的风险，因此必须要做好方案设计和评估。通常需要关注几个点：容量评估与资源准备、配置准备、发布批次和灰度计划、回滚计划、线上验证计划</p>
+<h3 id="容量评估与资源准备"><a href="#容量评估与资源准备" class="headerlink" title="容量评估与资源准备"></a>容量评估与资源准备</h3><p>新的功能意味着新的流量，我们需要提前评估上线后各个系统的流量，并提前准备好扩容。通常这个流量的评估可以依据现有的日活用户数、功能入口页的qps和目标系统的资源水位来评估，例如本次项目在应用首页增加了一个权益查询，当前首页的高峰期qps在20000，约有20%的日活用户满足漏出该入口的条件，那么点击该入口后进入的页面预计高峰期会有4000（通常会小于，因为不可能所有用户同时点进该页面，但还是应该做好最坏的准备），那么这个新页面查询的所有接口包括下游系统的rpc接口，都可能会新增4000的qps（对于下游系统，通常未必，因为可能会有前置条件阻断了进入下游的流量，因此这需要上游去评估可能对下游带来的增量），这些系统、以及涉及的存储，都需要去关注当前的配置能否承担这些流量增量。</p>
+<h3 id="配置准备"><a href="#配置准备" class="headerlink" title="配置准备"></a>配置准备</h3><p>新增的功能通常也会涉及新增的配置，例如mq生产者组消费者组、数据库表变更、配置中心的配置等等，其中有些配置可能需要在发布前配好，有些则需要再全量后配置，我们需要提前列出所有的配置和他们的完成时期。</p>
+<h3 id="发布批次和灰度计划"><a href="#发布批次和灰度计划" class="headerlink" title="发布批次和灰度计划"></a>发布批次和灰度计划</h3><p>对于后端系统来说，上线前还需要考虑是否需要放到一个灰度组中发布，对于有些功能，可能上线后立即需要白名单验证，那通常需要放入到一个灰度组中一起发布，否则可能出现流量走到生产机器中出现异常（不过这也取决于灰度系统是如何设计的）。但放入同一个灰度组也有风险，如果灰度组中的一个系统出现异常，灰度组中的所有系统都需要回滚重发。因此通常如果有灰度验证要求，通常应放入一个灰度组，如果没有，各模块单独灰度可能更好。对于前端系统来说，也需要考虑一下什么时机发布，如果是全新的页面，并且入口由后端控制，那么在后端开始灰度时就可以发布；如果是在原有的页面上修改，那还需要考虑一下是否需要等后端全量后再发布（例如后端可能会有一些版本控制逻辑，在没有全量前前端发布可能导致走到生产流量的用户拉不起来某个新做的组件）</p>
+<h3 id="回滚计划"><a href="#回滚计划" class="headerlink" title="回滚计划"></a>回滚计划</h3><p>上线后我们还需要考虑出现问题时如何处理，通常最粗暴的方法是回滚，但回滚并不适用于所有场景，对于一些新老流程迭代的项目，在进入灰度后可能已经有些用户走入了新流程，这时候回滚可能会导致这部分用户流程走不下去，因此通常需要有一个总的功能开关，各个子功能入口也应当有单独的开关，当问题发生后立刻关闭开关，先保证不会有新流量进入到异常的流程，同时拉新的分治修复问题上线，并同步拉取错误数据进行修复，并在这两项都完成后重新打开开关观察。</p>
+<h3 id="线上验证计划"><a href="#线上验证计划" class="headerlink" title="线上验证计划"></a>线上验证计划</h3><p>上线后通常还需要进行线上流程验证，这需要关注可验证时机、验证数据准备和覆盖场景。首先可验证时间，例如灰度期间验证或者全量后验证，不同的验证时机对发布批次灰度计划提出了要求，因此需要提前和测试、研发沟通确认。其次验证数据准备，通常必须要做的是各个系统添加白名单，另外还需要做一些特定的准备，例如开通测试钱包、发放测试优惠券等等。最后还需要确定好覆盖场景，线上通常不是所有场景都能验证到。例如有些功能需要验证轨迹真实性，有些场景需要再第三方系统下单并走到完成，这通常是无法具备的，因此线上验证计划中需要标明哪些场景可以测那些不可以，哪些必须测哪些只需要观察数据</p>
+<h3 id="组织评审"><a href="#组织评审" class="headerlink" title="组织评审"></a>组织评审</h3><p>PM在发布前几天通常需要提前核对以上几项，在项目空间中建立文档并让各团队各角色罗列发布涉及的系统、配置、资源申请，以及灰度计划、回滚计划、验证计划，并拉会评审。不过有些事情其实可以放到前面去做，例如白名单、开关应当在提测前准备好，测试也需要去验证这些是否能起作用。这些事项罗列完成后，在上线前、灰度后、全量后、打开开关前几个阶段还需要再去检查每一个事项的完成情况。</p>
+<h3 id="1-7、总结"><a href="#1-7、总结" class="headerlink" title="1.7、总结"></a>1.7、总结</h3><p>看完了上述评审过程，不难发现这些评审过程其实并不能帮我们规避风险或者解决风险，这些流程的意义在于帮助我们将风险分类，并提前暴露风险，将风险的范围控制在某个环节，这样我们才能逐个击破，不会手忙脚乱。</p>
+<h2 id="2、收集信息"><a href="#2、收集信息" class="headerlink" title="2、收集信息"></a>2、收集信息</h2><p>在困境二中，我们焦虑的根源在于，我们无法掌控别人的思想和行为，别人的进度、漏洞、困难和风险，对我们来说完全是黑盒，而人越多，这种信息迷雾就越大，因此作为PM我们必须要定期收集足够的信息。我们可以每天组织站会，通常是早上或是晚上，收集各个模块一天的进度和风险。这个进度不仅仅只是一个百分比，还应该细化到完成了哪些功能点。而风险也不应当只抛出问题，还需要给出当前解决进展如何，预计什么时候能解决，还需要什么资源。不过很多时候我们收集到的进度和风险可能是不真实的，还需要我们通过其他途径去识别和确认，例如看一看各模块的代码行数、自测用例通过数、dev环境发布频率跟工作量、进度是否匹配；例如你知道某模块资源紧张，多个项目并行，你可以多关注该模块，自己试一试该模块的功能有没有通，通过其他团队打听该模块的联调进度；又或者通过监控平台扒一扒dev环境核心接口的链路等等。</p>
+<h2 id="3、应对风险"><a href="#3、应对风险" class="headerlink" title="3、应对风险"></a>3、应对风险</h2><p>发现风险后就需要去解决，风险在我看来主要分为需求变更、功能无法实现和延期三个方面。</p>
+<h3 id="需求变更"><a href="#需求变更" class="headerlink" title="需求变更"></a>需求变更</h3><p>在困境五中提到过，需求变更也分为产品发起的和上游研发发起的。</p>
+<p>对于产品发起的需求变更，我们需要评估变更的必要性，主要关注两点：不变更是否影响业务流程的完整性；是否影响业务核心指标，如果必要性不大，我们就要考虑拒绝本次变更，放到后期迭代中去做。</p>
+<p>对于上游研发发起的，通常都比较棘手并且解决方式有限，对于不做就一定会影响业务完整性的变更，无非就是协调团队加人并对改动的需求进行重新评审并确认影响面（当然这类需求变更我想没有必要太正式的评审，最重要的是涉及的各团队达成一致并确认好影响面）。确实协调不了人力的则需要考虑是否有更简单的替代方案来实现，不过通常替代方法都不太优雅，要么不符合当下架构的思想，要么不易于扩展，所以通常只能作为临时方案。在达成一致使用临时方案时，也应该和涉及模块的负责人沟通确认好正式方案改造的排期并制定action跟进</p>
+<h3 id="功能无法实现"><a href="#功能无法实现" class="headerlink" title="功能无法实现"></a>功能无法实现</h3><p>进入开发之后发现功能无法实现这并不常见，但也会出现，这取决于前期评估是否充分。当出现这类问题时，还是要去考虑有没有替代方案，包括技术层面和业务层面的替代方案</p>
+<h3 id="延期"><a href="#延期" class="headerlink" title="延期"></a>延期</h3><p>延期是最常见的风险，主要出现在提测和上线环节。</p>
+<p>对于提测延期，首先看是否能协调研发人力，尽可能保证如期提测，经协调依然无法提测的，则跟测试确认是否能够压缩测试时间，如果不能的则再考虑分批提测，先保证主流程能如期提测，分支流程或页面细节可以安排第二期提测。</p>
+<p>对于上线延期，需要先关注问题的根结是什么，不过整体思路跟提测延期是类似的。如果是因为测试进度落后，先协调测试人力，协调后依然无法如期上线的，则需要跟业务产品沟通是否能延期上线，如果不能延期上线，只能考虑能否分批上线，但这通常也伴随着风险，这意味着需要将第二批上线的内容从当前分支上移除或加上开关并保持关闭，这类改动有可能会影响原有流程，也需要测试进行验证。如果是因为测试阶段发现代码&#x2F;方案存在较大漏洞，需要大改的，我想可能没有太好的解决方法，只能与业务产品沟通延期。</p>
+<p>总的来说，延期是一类常见且棘手的风险，当延期风险出现后，我们可行的手段都比较有限，因此在前期评估、设计阶段要尽可能的充分，来降低延期出现的可能</p>
+<h2 id="4、固定干系人责任，减少交接成本"><a href="#4、固定干系人责任，减少交接成本" class="headerlink" title="4、固定干系人责任，减少交接成本"></a>4、固定干系人责任，减少交接成本</h2><p>困境三的根源在于干系人责任不明确，或者由于人员变动产生交接，重新对接往往会带来不小的成本，因此在项目前期确定好各模块干系人之后，可以微调模块内的开发分工，但应该尽可能不去调整模块的owner。各模块可能会有多个开发，模块内的功能也被分到不同的开发去对接实现，这也很正常，但是对接过程中产生的一些重大问题，owner应该能去收口，当然这并不是要求owner解决一切，而是owner应该知晓问题、跟进问题、推进问题的解决，至于问题的解决还是应该由引起问题的人去做，权责分明，界限清晰，才能让成员负起责任，否则一定会有人抱有“反正有人兜底，我慢慢做”的想法。</p>
+<h2 id="5、好的技术方案设计与项目管理相辅相成"><a href="#5、好的技术方案设计与项目管理相辅相成" class="headerlink" title="5、好的技术方案设计与项目管理相辅相成"></a>5、好的技术方案设计与项目管理相辅相成</h2><p>很多人会在进入方案设计的阶段才开始重视方案的重要性，不过到这个阶段我们可能已经错过了一些事情。在一些复杂的项目中，我们可能需要提前去做设计，例如在业务提出想法时、在产品输出prd前。因为复杂的项目技术方案往往影响着业务、产品方案的走向，如果业务方案、产品方案评审结束后我们才开始做技术方案设计，可能会发现业务的想法无法实现，或者无法通过优雅的方式实现，那这时作为PM你能选的只有两条路：1、与业务、产品沟通，调整业务方案，显然业务和产品大多数时候都很难接受这种做法，也许你提出的改动会影响业务的核心kpi；2、与开发沟通，用不太优雅的方式实现，虽然很多时候开发最终会妥协，毕竟把项目推上线是最重要的，但这样做往往会给后期迭代留下很大的坑，最终需要不断地向不优雅的方案妥协，代码也会迅速腐化。因此作为PM&#x2F;架构师，我们必须重视技术方案的作用，在项目前期多与业务交流，并同步开始技术方案（这个时候往往只是概要设计）初稿的设计。</p>
+<h2 id="6、树立规范才能稳步推进"><a href="#6、树立规范才能稳步推进" class="headerlink" title="6、树立规范才能稳步推进"></a>6、树立规范才能稳步推进</h2><p>同样的，对于规范，很多时候我们常常在进入开发阶段后才会重视起来，但其实规范也贯穿着整个项目流程，大到项目流程的规范，小到交流话术的规范；从需求文档、技术方案的格式（当然需求文档的规范往往不是PM就能决定的，但我们应当起到推动作用，下面在复盘中会讲到），到工程代码规范，再到上线方案的规范。</p>
+<p>文档的规范其实在上面的评审章节有提到过，其实对于文档规范没有过多可以赘述的，不同的行业适用的文档格式可能也不尽相同，不过最重要的是，在一个项目中，同一类型的文档格式规范应当统一，这样同一角色对接起来才能更迅速。当然如果PM时间比较充裕，也可以检查一下这些格式，当然如果你的团队有sop的角色，可以由他来跟进这些规范。</p>
+<p>工程代码的规范上面也提到过。工程的规范同一项目的各团队应当尽量保持一致，例如系统命名，系统拆分定位（例如我之前的团队要求对客户端提供接口的应用以-app结尾，仅提供rpc接口的以-service结尾，后台以-admin结尾）、接口设计（比如提供出去的接口出参应该有统一的结构，包、接口的命名分割应该一致）等等。代码的规范可能由于系统的定位不同有所差异，但应当有一个基线标准（在我看来阿里代码规范应该成为基线），各团队在基线只上定制（例如特殊的分层结构，特殊框架的用法等等）。</p>
+<p>这里还提到了一个很细微的点——交流话术的规范，当然这不是要求我们说每一句话都要套一个模板，我认为这一点有两层含义。</p>
+<p>第一点，当我们在项目中遇到难以解决的问题、重要的告知事项时，应该采用有组织的语言，例如遇到了某个问题无法解决需要求助上级，我们应该明确罗列出问题的背景现状、尝试过的方案、当前的阻塞点、期望诉求等等；又或者你发现了一个改动点可能影响到多个团队，需要他们共同评估影响面，你也应该罗列出改动点、需要评估的点、截止时间等等。有组织的语言通常能帮助我们提高交流效率，减少理解误差，不过通常这不是什么太硬性的要求，不需要一个固定的模板，有组织即可。当然如果你遇到一些不太擅长总结的同事，提出的问题让你难以理解，那么你就应该罗列出你关注的维度，让他按这些维度重新组织语言。</p>
+<p>第二点，统一术语，如果你了解过领域驱动设计，你肯定听说过这个说法。同样一个词，在不同团队中由于视角不一致或者是习惯不一致，可能代指着不同的东西（我曾遇到过“附加费”一词在不同团队代指不同费用而引起的线上问题），因此在项目前期，我们有必要建立统一的语言，产品层面需要在需求文档中对一些术语进行准确的定义，研发层面则应当对领域模型和模型中概念统一名称，目的在于消除多义、歧义的描述。此外，研发跟产品之间也应该打破语言的隔阂，举个例子，很多app会有积分的概念，这个积分可能经过了多次迭代，比如原先叫积分改版后叫成长点，那么在业务和产品的口中就一定会称之为积分和成长点，但在研发口中，可能被叫做积分1.0和积分2.0，而这两版的积分底层可能是用的同一张表——通用积分表，这样的语言交流起来会非常的费劲，总是需要映射翻译，对新人也十分不友好，因此研发应该统一语言，用业务产品能理解的方式——积分和成长点来交流，但同时，产品也应该知道一些研发的术语，起码应该知道积分和成长点都是一种通用积分。</p>
+<h2 id="7、一切结论落到文档"><a href="#7、一切结论落到文档" class="headerlink" title="7、一切结论落到文档"></a>7、一切结论落到文档</h2><p>不管是评审过程中遇到的问题和对应的结论，还是新增的需求变更，又或者是其他团队给出的流程梳理，都应该落到相应的文档或项目空间或贴如项目群公告中，再不济也应当是一段话的描述发到项目群中，并艾特相关人。</p>
+<p>总之，我们做的一切改动，都应当有迹可循。一方面，人心险恶，尽管不常见，但确实会有人因为逃避责任否认自己曾经说过的话；另一方面，也借此督促项目成员“谨言”，作为PM也好，作为项目一员也好，我们公布出去的每一个结论，都应该是经过查证确认的，我们也应当为自己的结论负责（曾经我就因为一个口误让对接方误解而得到了一个线上bug，因此我深有感悟）。</p>
+<h2 id="8、复盘——建立有效的反馈机制"><a href="#8、复盘——建立有效的反馈机制" class="headerlink" title="8、复盘——建立有效的反馈机制"></a>8、复盘——建立有效的反馈机制</h2><p>我曾经的领导说过一句这样的话：“人一定是会犯错的，我们只能通过机制去约束人，尽可能的防范错误”，对此我十分认同。在一个项目中，我们不可能不犯任何的错误，但最重要的是要学会吸取教训，项目管理机制不可能是一下子就能建成的，因此我们要在犯错中不断总结完善，推动项目机制的完善，同时也提醒我们自己有哪些错误容易犯。</p>
+<p>因此在项目成功上线后，我们有必要去做复盘总结项目中的过错，并反向推动流程的完善。我们可以集思广益，征集各个项目成员的想法，罗列项目中存在的问题，并在复盘会上讨论出解决方案，同时将解决方案的责任落实到团队或个人，并指定期限，并跟进进度，从而推动流程优化。当然有的时候项目中也会存在值得固化的亮点，不过鉴于互联网软件项目的复杂性，我觉得只有少部分项目能做到这一点，因此我想这不是一个必须项，对于大多数项目，我们得先做到“无过便是功”。</p>
+<p>此外，复盘的过程也是一种双向改进，大多数时候，业务和产品关注研发的交付质量，这通常是比较容易评估的，但同时，研发也会关注业务产品的需求质量，是否条理清晰，易懂无歧义，这往往难以量化，因此复盘对于研发来说，是一个比较好的机会，提出业务与产品的问题，推动需求质量的改进。</p>
+<h1 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h1><h2 id="1、一些残酷的事实"><a href="#1、一些残酷的事实" class="headerlink" title="1、一些残酷的事实"></a>1、一些残酷的事实</h2><h3 id="事情永远不会像你想象的那么顺利"><a href="#事情永远不会像你想象的那么顺利" class="headerlink" title="事情永远不会像你想象的那么顺利"></a>事情永远不会像你想象的那么顺利</h3><p>尽管有这么多的流程、手段来促进项目的成功，并且你做足了充分的准备，项目成员也万般的配合，你也不能指望项目过程中不会出现问题，就如墨菲定律说的“任何可能出错的事情最终都会出错”，PM应该始终保持对风险敏锐的嗅觉，万万不可以抱着“这个项目看起来很简单，一定能正常上线的”想法。</p>
+<h3 id="PM总是背锅侠"><a href="#PM总是背锅侠" class="headerlink" title="PM总是背锅侠"></a>PM总是背锅侠</h3><p>PM往往是吃力不讨好的角色，作为项目最直接的负责人，无论是在项目过程中，还是在项目上线后出现线上问题，这些锅往往会先甩到PM这里，虽然这不意味着PM什么锅都得背，但划分责任也是件麻烦的事情，并且很多时候也难逃一个次要责任</p>
+<h2 id="2、一些原则"><a href="#2、一些原则" class="headerlink" title="2、一些原则"></a>2、一些原则</h2><h3 id="不做老好人"><a href="#不做老好人" class="headerlink" title="不做老好人"></a>不做老好人</h3><p>尽管PM对项目负有最重的责任，但并不意味着PM要做老好人，对各个角色提出的诉求可以一味的答应。PM应该对项目负责而非对个人负责，不需要讨项目成员的欢心，因此当有人提出一些不合理的、难以实现的要求时，应当及时拒绝；又或者当某个模块的成员无法按照要求完成工作时，也应该及时告知他们的负责人。</p>
+<h3 id="善于寻求帮助"><a href="#善于寻求帮助" class="headerlink" title="善于寻求帮助"></a>善于寻求帮助</h3><p>没有人是全面的，并且通常出于职级、权力的限制，很多事情我们自己无法决定，因此有必要及时寻求上级的帮助。无论是评审阶段的分歧，还是方案设计中的难点，又或是延期风险，当我们的能力和权力都不足以解决的时候，及时上报给上级</p>
+<h3 id="流程至上"><a href="#流程至上" class="headerlink" title="流程至上"></a>流程至上</h3><p>如果我们的团队已经现行了一套完善的项目管理流程，那我们应该尽可能按流程执行，并做相应的记录，一方面是对我们自己和团队的保护，另一方面按照流程执行也有助于后期复盘与流程优化</p>
+<h2 id="3、一些碎碎念"><a href="#3、一些碎碎念" class="headerlink" title="3、一些碎碎念"></a>3、一些碎碎念</h2><h3 id="勇于反思"><a href="#勇于反思" class="headerlink" title="勇于反思"></a>勇于反思</h3><p>项目管理能力的不足，通常都会在项目过程中一个个暴露出来，我们不能等到项目结束后复盘时再做总结和反思，当我们发现事情远离预想，风险不断暴露的时候，我们就应该及时反思，调整方向，当然，当局者迷，求助上级并不丢人</p>
+<h3 id="保持良好的心态"><a href="#保持良好的心态" class="headerlink" title="保持良好的心态"></a>保持良好的心态</h3><p>曾经我在带某个项目时，由于时间紧张、prd不完善以及带项目经验不足，每天加完班回去睡觉也会梦见第二天要安排什么工作，心态临近崩溃。后来想想，这样的焦灼属实太过，越是困难就越应该保持理性。当然良好的心态也需要这些困难来不断地磨炼</p>
+
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/08/30/%E4%B8%80%E4%BA%9B%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E6%80%BB%E7%BB%93/">一些代码规范总结</a></div></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

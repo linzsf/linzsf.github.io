@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>一些代码规范总结 - 小林同学</title>
+
+  
+    <meta name="description" content="代码命名： 1、命名应当简介直观，好的命名不需要注释（当然并不是鼓励你不写注释，而是好的命名应当能一眼看出含义或通过一次查询便能明白其含义，注释应当侧重于解释而不是翻译），尽量不适用拼音缩写案例：好的命名：OrderItem（订单项）、FeeItem（费用项）、payMode（支付方式）；坏的命名：ddx、fyx、zffs、OItem、FItem、payFs  2、命名应当表达准确，不应该词不达意">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些代码规范总结">
+<meta property="og:url" content="http://example.com/2024/08/30/%E4%B8%80%E4%BA%9B%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="小林同学">
+<meta property="og:description" content="代码命名： 1、命名应当简介直观，好的命名不需要注释（当然并不是鼓励你不写注释，而是好的命名应当能一眼看出含义或通过一次查询便能明白其含义，注释应当侧重于解释而不是翻译），尽量不适用拼音缩写案例：好的命名：OrderItem（订单项）、FeeItem（费用项）、payMode（支付方式）；坏的命名：ddx、fyx、zffs、OItem、FItem、payFs  2、命名应当表达准确，不应该词不达意">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-30T13:52:26.000Z">
+<meta property="article:modified_time" content="2024-10-10T14:43:47.670Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="流程规范">
+<meta property="article:tag" content="代码规范">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="流程规范,代码规范">
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+  
+
+<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">小林同学</div><div class="sub cap">如无必要勿增实体</div></a></div>
+
+<nav class="menu dis-select"></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">一些代码规范总结</span></div><div class="widget-body fs14"><div class="doc-tree active"></div></div></widget>
+
+
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2024-08-30T13:52:26.000Z">2024-08-30</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>一些代码规范总结</span></h1>
+<h1 id="代码命名："><a href="#代码命名：" class="headerlink" title="代码命名："></a>代码命名：</h1><hr>
+<p>1、<strong>命名应当简介直观</strong>，好的命名不需要注释（当然并不是鼓励你不写注释，而是好的命名应当能一眼看出含义或通过一次查询便能明白其含义，注释应当侧重于解释而不是翻译），尽量不适用拼音缩写<br><strong>案例</strong>：好的命名：OrderItem（订单项）、FeeItem（费用项）、payMode（支付方式）；坏的命名：ddx、fyx、zffs、OItem、FItem、payFs</p>
+<hr>
+<p>2、<strong>命名应当表达准确，不应该词不达意</strong><br><strong>案例</strong>：我在项目中看到过一个真实的反例，字段名叫companyIdStr，但其实里面存放的是companyName，接手的人会难以理解</p>
+<hr>
+<p>3、<strong>命名应当尽可能的为以后留出扩展空间</strong><br><strong>案例</strong>：例如你的订单现在只有线上支付和线下支付两种支付方式，但仍应该用字段payMode（支付方式）来表达该区别，而不是使用isOfflinePay（是否线下支付）这类命名，也许后面还会出好友代付、扫码支付等方式</p>
+<hr>
+<p>4、<strong>方法&#x2F;接口名应该与方法的实现一致</strong>，例如你的方法叫做queryOrder，那么方法实现中就不应该出现任何更新动作</p>
+<h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><hr>
+<p>1、<strong>流量入口层应当捕获所有异常</strong>，并转换为对客提示或外部可识别的异常码，避免底层异常信息直接透出</p>
+<hr>
+<p>2、应当自定义一个业务异常类，来和jvm抛出的异常区分</p>
+<hr>
+<p>3、捕获到jvm抛出的异常，必须打印堆栈，避免异常信息丢失</p>
+<h1 id="日志打印"><a href="#日志打印" class="headerlink" title="日志打印"></a>日志打印</h1><hr>
+<p>1、日志中不应当包含大对象，通常只打印关键信息即可<br><strong>案例</strong>：log.info(“订单冻结无法操作，order&#x3D;{}”, order);只需打印orderId，不应该把整个order对象打出来（当然如果你的order根本没有操作日志，无法验证发生错误时是否真的冻结，或无法通过数据库、监控平台查证其他关键现场，那你确实需要打出完整的信息）</p>
+<hr>
+<p>2、凡是手动抛出异常地方，都应该打印日志，异常现场通常留有最关键的信息，例如出错的订单号，异常的订单状态，若在外层捕获异常后再打印日志，可能导致关键信息丢失</p>
+<hr>
+<p>3、打印的信息若需要对对象进行get的，应对对象进行判空，避免因日志导致NPE</p>
+<hr>
+<p>4、对于缺失链路追踪能力的项目，可以适当在流量入口处打印日志记录入参</p>
+<h1 id="枚举与常量"><a href="#枚举与常量" class="headerlink" title="枚举与常量"></a>枚举与常量</h1><hr>
+<p>1、<strong>代码中不允许出现魔法值</strong>（即未经定义的数字、字符串常量），所有常量应该都是用常量字段或枚举</p>
+<hr>
+<p>2、<strong>与外部系统交互的接口的参中不允许使用枚举字段</strong>，若服务提供方和调用方使用的枚举版本不一致，调用时可能引起序列化异常</p>
+<h1 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h1><hr>
+<p>1、<strong>应当尽可能的减少循环和if&#x2F;else的层数，推荐不超过三</strong>层，有时可以使用相反的条件提前结束循环或判断<br>案例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 不推荐的写法</span></span><br><span class="line"><span class="keyword">for</span> (Order order : orders) &#123;</span><br><span class="line">	<span class="keyword">if</span> (order.isDeal()) &#123;</span><br><span class="line">		<span class="comment">// ...处理订单已成交逻辑</span></span><br><span class="line">		<span class="keyword">if</span> (order.isDirectOrder) &#123;</span><br><span class="line">			<span class="comment">// ...处理直营订单逻辑</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 推荐的写法，按下面的方式就可以将三层的结构简化为两层</span></span><br><span class="line"><span class="keyword">for</span> (Order order : orders) &#123;</span><br><span class="line">	<span class="keyword">if</span> (!order.isDeal()) &#123;</span><br><span class="line">		<span class="keyword">continue</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// ...处理订单已成交逻辑</span></span><br><span class="line">	<span class="keyword">if</span> (!order.isDirectOrder) &#123;</span><br><span class="line">		<span class="keyword">continue</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// ...处理直营订单逻辑</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>2、<strong>方法不宜过长</strong>，避免平铺直叙，应当做一些适当的抽象和编排；大多数业务代码可以总结为数据准备、前置校验、前置处理、核心动作（例如扭转订单动作、调用外部接口等）、后置处理（例如确认处理结果、将结果通知外部系统、反写流水状态等等），按照这种方式抽象代码会显得更优雅易懂<br><strong>案例</strong><br>以下是随手写的一个简化的费用退款的案例，实际的费用退款可能复杂的多，可能涉及到重复发起校验、分布式事务等问题，在这里不做讨论，只关注代码结构即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 退还费用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">refundFee</span><span class="params">(FeeRefundRequest request)</span> &#123;</span><br><span class="line">	<span class="comment">// 数据准备，查询订单信息、用户信息、商品信息、费用信息、流水信息，并组装到context中，省略实现</span></span><br><span class="line">	<span class="type">FeeRefundContext</span> <span class="variable">context</span> <span class="operator">=</span> buildContext(request);</span><br><span class="line">	<span class="comment">// 前置校验</span></span><br><span class="line">	preValidate(context);</span><br><span class="line">	<span class="comment">// 前置处理，创建流水，将费用状态更新到退款中</span></span><br><span class="line">	preProcess(context);</span><br><span class="line">	<span class="comment">// 核心动作，通知银行发起退款，省略实现</span></span><br><span class="line">	<span class="type">Result</span> <span class="variable">result</span> <span class="operator">=</span> startRefund(context);</span><br><span class="line">	<span class="comment">// 后置处理，确认银行受理结果，反写流水通知用户手里结果</span></span><br><span class="line">	postProcess(context, result);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">preValidate</span><span class="params">(FeeRefundContext context)</span> &#123;</span><br><span class="line">	<span class="comment">// 校验订单状态</span></span><br><span class="line">	validateOrderState(context);</span><br><span class="line">	<span class="comment">// 校验费用状态</span></span><br><span class="line">	validateFeeCanRefund(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">preProcess</span><span class="params">(FeeRefundContext context)</span> &#123;</span><br><span class="line">	<span class="comment">// 将费用状态更新到退款中</span></span><br><span class="line">	updateFeeState(context.getFeeId(), FeeState.Refunding.getCode());</span><br><span class="line">	<span class="comment">// 创建退款流水</span></span><br><span class="line">	createRefundFlow(context);</span><br><span class="line">	<span class="comment">// 刷新上下文</span></span><br><span class="line">	refreshContext(context);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">postProcess</span><span class="params">(FeeRefundContext context, Result result)</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (result.isAccept) &#123;</span><br><span class="line">		<span class="comment">// 更新流水状态到受理成功</span></span><br><span class="line">		updateFeeFlowState(context.getFlowId, FlowState.Accepted.getCode());</span><br><span class="line">		<span class="comment">// 发送push通知</span></span><br><span class="line">		sendFeeRefundingPush(context);</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="comment">// 回滚到已支付</span></span><br><span class="line">		updateFeeState(context.getFeeId(), FeeState.Paid.getCode());</span><br><span class="line">		<span class="comment">// 将流水置为失败</span></span><br><span class="line">		updateFeeFlow(context.getFlowId(), FlowState.Failed.getCode());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="代码分层"><a href="#代码分层" class="headerlink" title="代码分层"></a>代码分层</h1><hr>
+<p>1、简单的项目通常直接分成controller、server、dao几个简单的层，复杂的项目应该按照需求增加一些抽象，抽离出通用逻辑，例如领域服务domainService、通用业务组件component等</p>
+<hr>
+<p>2、层与层之间职责应当隔离，例如controller、dao层不应该处理业务逻辑，service层不应该直接操作数据库等。不过通常靠人力来维护这一点十分困难，难免会出现新手开发者搞乱调用层次，必要的时候可以重要的层拆分成Module，让上层引用下层的依赖，这样如果下层引用上层就会出现循环依赖无法编译</p>
+<hr>
+<p>3、<strong>层的粒度应当随调用链而减小</strong>，即应避免出现同层之间调用、下层调用上层的情况</p>
+<hr>
+<p>4、<strong>需要调用外部系统的，应当设立一层防腐层</strong>，来屏蔽外部系统的模型和异常，即将外部系统的dto转换成内部的领域模型，捕获失败和异常的场景转换为内部可识别的异常<br><strong>案例</strong>:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderRepoImpl</span> implement OrderRepo &#123;</span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> OrderFacade orderFacade;</span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> OrderConverter orderConverter;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="keyword">public</span> Order <span class="title function_">queryOrder</span><span class="params">(Long orderId)</span> &#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			Result&lt;OrderDTO&gt; result = orderFacade.queryOrderById(orderId);</span><br><span class="line">			<span class="keyword">if</span> (result == <span class="literal">null</span> || !result.isSuccess()) &#123;</span><br><span class="line">				<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">BusiException</span>(<span class="string">&quot;query order by id error&quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">return</span> orderConverter.toDo(result.getData);</span><br><span class="line">		&#125; <span class="keyword">catch</span>(Exception e) &#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">BusiException</span>(<span class="string">&quot;query order by id error&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><hr>
+<p>1、<strong>应当尽量避免连表查询</strong>，一方面连表查询可能带来性能问题，另一方面连表查询可能导致一张表的查询逻辑分散在多个Mapper中，当该表结构发生变化时需要修改多处，难以维护</p>
+<hr>
+<p>2、如果系统直连数据库，推荐在Mapper外层再包一层防腐层，来屏蔽数据库异常或将PO转换为DO</p>
+<hr>
+<p>3、<strong>若数据库有主从的，核心场景（例如涉及资金流状态、权益发放状态、库存扣减的场景等）应当查询主库；若存在更新某一条数据后需要将该条数据再查询出来的，应当查询主库；涉及异步回调的，在处理回调数据时优先查询主库（例如监听到支付成功回调后需要将支付数据查出来用于其他流程，此时应优先查主库）。对实时性要求不高的场景、qps高的场景，应避免直接查询主库或过滤后查询主库，并做好限流，防止对主库带来压力</strong></p>
+
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/09/10/%E5%85%B3%E4%BA%8E%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93%E5%92%8C%E6%80%9D%E8%80%83/">关于项目管理的一些总结和思考</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/08/08/docker%E5%AE%89%E8%A3%85elasticsearch%E5%92%8Ckibana/">docker安装elasticsearch和kibana</a></div></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
